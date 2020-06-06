@@ -1,2 +1,8 @@
-// ES6 code goes here
-console.log('es6 code goes here');
+class SlotMachine{
+    constructor()
+}
+
+
+function randomNumberGenerator(){
+    
+}
