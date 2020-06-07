@@ -1,20 +1,18 @@
 // class SlotMachine{
 //     constructor()
 // }
-
+const _ = require('lodash');
 
 function randomNumberGenerator(){
     let container = []
-    for(let i=0; i>5; i++){
-       let num = Math.floor(Math.random() * 10)
-       container.push(num)
+    let numArray =_.times(5, ()=>container.push((Math.floor(Math.random() * 10))))
+    return container
     }
      
-    return container;
     
-}
+    
+
 
 console.log(randomNumberGenerator())
-
 
 
