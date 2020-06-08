@@ -24,10 +24,120 @@ function randomNumberGenerator(){
 
 function slotResults(){
     let slotAssignment = new SlotMachine(_.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5))
-    return slotAssignment
+    switch(slotAssignment.slot1){
+        case 0:
+            console.log ('Haunted Mansion');
+            break;
+        case 1:
+            console.log ('Space Mountain')
+            break;
+        case 2:
+            console.log ('Thunder Mountain')
+            break;
+        case 3:
+            console.log('Matterhorn')
+            break;
+        case 4:
+            console.log('Pirates of the Caribbean')
+            break;
+        case 5:
+            console.log('Splash Mounatin')
+            break;
+        default:
+            console.log('nonexistent')
+    }
+    switch(slotAssignment.slot2){
+        case 0:
+            console.log ('Haunted Mansion');
+            break;
+        case 1:
+            console.log ('Space Mountain')
+            break;
+        case 2:
+            console.log ('Thunder Mountain')
+            break;
+        case 3:
+            console.log('Matterhorn')
+            break;
+        case 4:
+            console.log('Pirates of the Caribbean')
+            break;
+        case 5:
+            console.log('Splash Mounatin')
+            break;
+        default:
+            console.log('nonexistent')
+    }
+    switch(slotAssignment.slot3){
+        case 0:
+            console.log ('Haunted Mansion');
+            break;
+        case 1:
+            console.log ('Space Mountain')
+            break;
+        case 2:
+            console.log ('Thunder Mountain')
+            break;
+        case 3:
+            console.log('Matterhorn')
+            break;
+        case 4:
+            console.log('Pirates of the Caribbean')
+            break;
+        case 5:
+            console.log('Splash Mounatin')
+            break;
+        default:
+            console.log('nonexistent')
+    }
+    switch(slotAssignment.slot4){
+        case 0:
+            console.log ('Haunted Mansion');
+            break;
+        case 1:
+            console.log ('Space Mountain')
+            break;
+        case 2:
+            console.log ('Thunder Mountain')
+            break;
+        case 3:
+            console.log('Matterhorn')
+            break;
+        case 4:
+            console.log('Pirates of the Caribbean')
+            break;
+        case 5:
+            console.log('Splash Mounatin')
+            break;
+        default:
+            console.log('nonexistent')
+    }
+    switch(slotAssignment.slot5){
+        case 0:
+            console.log ('Haunted Mansion');
+            break;
+        case 1:
+            console.log ('Space Mountain')
+            break;
+        case 2:
+            console.log ('Thunder Mountain')
+            break;
+        case 3:
+            console.log('Matterhorn')
+            break;
+        case 4:
+            console.log('Pirates of the Caribbean')
+            break;
+        case 5:
+            console.log('Splash Mounatin')
+            break;
+        default:
+            console.log('nonexistent')
+    }
+    
 }
 
-console.log(slotResults())
+slotResults()
 
 
 
