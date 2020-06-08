@@ -21,8 +21,16 @@ function randomNumberGenerator(){
     
 }
 
-let slotAssignment = new SlotMachine(_.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5))
-console.log(slotAssignment)
+
+function slotResults(){
+    let slotAssignment = new SlotMachine(_.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5))
+    return slotAssignment
+}
+
+console.log(slotResults())
+
+
+
     
     
 
