@@ -14,12 +14,12 @@ class SlotMachine{
 }
 
 
-function randomNumberGenerator(){
-    let container = []
-    let numArray =_.times(5, ()=>container.push(_.random(0,5)))
-    return container
+// function randomNumberGenerator(){
+//     let container = []
+//     let numArray =_.times(5, ()=>container.push(_.random(0,5)))
+//     return container
     
-}
+// }
 
 
 let slotResults =function (){
@@ -138,7 +138,16 @@ let slotResults =function (){
     return resultArr
 }
 
-console.log(slotResults())
+let gmResults = slotResults()
+console.log(gmResults)
+
+
+
+
+
+
+
+
 
 
 
