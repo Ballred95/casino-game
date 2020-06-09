@@ -139,7 +139,21 @@ let slotResults =function (){
 }
 
 let gmResults = slotResults()
-console.log(gmResults)
+// console.log(gmResults)
+
+
+let container=[]
+gmResults.forEach((ride)=>{
+    
+    if(ride === 'Splash Mounatin'){
+        container.push(ride)
+    }
+})
+
+console.log(container)
+
+
+
 
 
 
