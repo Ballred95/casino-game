@@ -139,18 +139,26 @@ let slotResults =function (){
 }
 
 let gmResults = slotResults()
-// console.log(gmResults)
+console.log(gmResults)
 
-
-let container=[]
+function splashWin(){
+    let container=[]
 gmResults.forEach((ride)=>{
     
     if(ride === 'Splash Mounatin'){
         container.push(ride)
     }
+    
 })
+    if(container.length === 3){
+        return 'Youve won with 3 splash mountains!'
+    }
+    else{
+        return 'you got no splash'
+    }
+}
 
-console.log(container)
+console.log(splashWin())
 
 
 
