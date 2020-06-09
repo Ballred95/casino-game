@@ -22,122 +22,128 @@ function randomNumberGenerator(){
 }
 
 
-function slotResults(){
+let slotResults =function (){
+    resultArr=[]
     let slotAssignment = new SlotMachine(_.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5))
     switch(slotAssignment.slot1){
         case 0:
-            console.log ('Haunted Mansion');
+            resultArr.push('Haunted Mansion');
             break;
         case 1:
-            console.log ('Space Mountain')
+            resultArr.push('Space Mountain')
             break;
         case 2:
-            console.log ('Thunder Mountain')
+            resultArr.push('Thunder Mountain')
             break;
         case 3:
-            console.log('Matterhorn')
+            resultArr.push('Matterhorn')
             break;
         case 4:
-            console.log('Pirates of the Caribbean')
+            resultArr.push('Pirates of the Caribbean')
             break;
         case 5:
-            console.log('Splash Mounatin')
+            resultArr.push('Splash Mounatin')
             break;
         default:
             console.log('nonexistent')
     }
     switch(slotAssignment.slot2){
         case 0:
-            console.log ('Haunted Mansion');
+            resultArr.push('Haunted Mansion');
             break;
         case 1:
-            console.log ('Space Mountain')
+            resultArr.push('Space Mountain')
             break;
         case 2:
-            console.log ('Thunder Mountain')
+            resultArr.push('Thunder Mountain')
             break;
         case 3:
-            console.log('Matterhorn')
+            resultArr.push('Matterhorn')
             break;
         case 4:
-            console.log('Pirates of the Caribbean')
+            resultArr.push('Pirates of the Caribbean')
             break;
         case 5:
-            console.log('Splash Mounatin')
+            resultArr.push('Splash Mounatin')
             break;
         default:
-            console.log('nonexistent')
+            resultArr.push('nonexistent')
     }
     switch(slotAssignment.slot3){
         case 0:
-            console.log ('Haunted Mansion');
+            resultArr.push('Haunted Mansion');
             break;
         case 1:
-            console.log ('Space Mountain')
+            resultArr.push('Space Mountain')
             break;
         case 2:
-            console.log ('Thunder Mountain')
+            resultArr.push('Thunder Mountain')
             break;
         case 3:
-            console.log('Matterhorn')
+            resultArr.push('Matterhorn')
             break;
         case 4:
-            console.log('Pirates of the Caribbean')
+            resultArr.push('Pirates of the Caribbean')
             break;
         case 5:
-            console.log('Splash Mounatin')
+            resultArr.push('Splash Mounatin')
             break;
         default:
-            console.log('nonexistent')
+            resultArr.push('nonexistent')
     }
     switch(slotAssignment.slot4){
         case 0:
-            console.log ('Haunted Mansion');
+            resultArr.push('Haunted Mansion');
             break;
         case 1:
-            console.log ('Space Mountain')
+            resultArr.push('Space Mountain')
             break;
         case 2:
-            console.log ('Thunder Mountain')
+            resultArr.push('Thunder Mountain')
             break;
         case 3:
-            console.log('Matterhorn')
+            resultArr.push('Matterhorn')
             break;
         case 4:
-            console.log('Pirates of the Caribbean')
+            resultArr.push('Pirates of the Caribbean')
             break;
         case 5:
-            console.log('Splash Mounatin')
+            resultArr.push('Splash Mounatin')
             break;
         default:
-            console.log('nonexistent')
+            resultArr.push('nonexistent')
     }
     switch(slotAssignment.slot5){
         case 0:
-            console.log ('Haunted Mansion');
+            resultArr.push('Haunted Mansion');
             break;
         case 1:
-            console.log ('Space Mountain')
+            resultArr.push('Space Mountain')
             break;
         case 2:
-            console.log ('Thunder Mountain')
+            resultArr.push('Thunder Mountain')
             break;
         case 3:
-            console.log('Matterhorn')
+            resultArr.push('Matterhorn')
             break;
         case 4:
-            console.log('Pirates of the Caribbean')
+            resultArr.push('Pirates of the Caribbean')
             break;
         case 5:
-            console.log('Splash Mounatin')
+            resultArr.push('Splash Mounatin')
             break;
         default:
-            console.log('nonexistent')
+            resultArr.push('nonexistent')
     }
-    
+    return resultArr
 }
 
-slotResults()
+console.log(slotResults())
+
+
+
+
+
 
 
 
