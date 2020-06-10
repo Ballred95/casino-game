@@ -24,11 +24,11 @@ class SlotMachine{
 
 let slotResults =function (){
     resultArr=[]
-    let slotAssignment = new SlotMachine(_.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5), _.random(0,5))
+    let slotAssignment = new SlotMachine(_.random(0,4), _.random(0,4), _.random(0,4), _.random(0,4), _.random(0,4))
     switch(slotAssignment.slot1){
         case 0:
-            resultArr.push('Haunted Mansion');
-            break;
+            resultArr.push('Splash Mounatin')
+            break; 
         case 1:
             resultArr.push('Space Mountain')
             break;
@@ -40,17 +40,15 @@ let slotResults =function (){
             break;
         case 4:
             resultArr.push('Pirates of the Caribbean')
-            break;
-        case 5:
-            resultArr.push('Splash Mounatin')
-            break;
-        default:
+            break; 
+        
+        default:  
             console.log('nonexistent')
     }
     switch(slotAssignment.slot2){
         case 0:
-            resultArr.push('Haunted Mansion');
-            break;
+            resultArr.push('Splash Mounatin')
+            break; 
         case 1:
             resultArr.push('Space Mountain')
             break;
@@ -63,16 +61,14 @@ let slotResults =function (){
         case 4:
             resultArr.push('Pirates of the Caribbean')
             break;
-        case 5:
-            resultArr.push('Splash Mounatin')
-            break;
+        
         default:
             resultArr.push('nonexistent')
     }
     switch(slotAssignment.slot3){
         case 0:
-            resultArr.push('Haunted Mansion');
-            break;
+            resultArr.push('Splash Mounatin')
+            break; 
         case 1:
             resultArr.push('Space Mountain')
             break;
@@ -85,16 +81,14 @@ let slotResults =function (){
         case 4:
             resultArr.push('Pirates of the Caribbean')
             break;
-        case 5:
-            resultArr.push('Splash Mounatin')
-            break;
+        
         default:
             resultArr.push('nonexistent')
     }
     switch(slotAssignment.slot4){
         case 0:
-            resultArr.push('Haunted Mansion');
-            break;
+            resultArr.push('Splash Mounatin')
+            break; 
         case 1:
             resultArr.push('Space Mountain')
             break;
@@ -108,15 +102,14 @@ let slotResults =function (){
             resultArr.push('Pirates of the Caribbean')
             break;
         case 5:
-            resultArr.push('Splash Mounatin')
-            break;
+            
         default:
             resultArr.push('nonexistent')
     }
     switch(slotAssignment.slot5){
         case 0:
-            resultArr.push('Haunted Mansion');
-            break;
+            resultArr.push('Splash Mountain')
+            break; 
         case 1:
             resultArr.push('Space Mountain')
             break;
@@ -129,9 +122,7 @@ let slotResults =function (){
         case 4:
             resultArr.push('Pirates of the Caribbean')
             break;
-        case 5:
-            resultArr.push('Splash Mounatin')
-            break;
+        
         default:
             resultArr.push('nonexistent')
     }
@@ -139,13 +130,13 @@ let slotResults =function (){
 }
 
 let gmResults = slotResults()
-console.log(gmResults)
+
 
 function splashWin(){
     let container=[]
 gmResults.forEach((ride)=>{
     
-    if(ride === 'Splash Mounatin'){
+    if(ride === 'Splash Mountain'){
         container.push(ride)
     }
     
@@ -162,7 +153,7 @@ function spaceWin(){
     let container=[]
 gmResults.forEach((ride)=>{
     
-    if(ride === 'Space Mounatin'){
+    if(ride === 'Space Mountain'){
         container.push(ride)
     }
     
@@ -179,7 +170,7 @@ function thunderhWin(){
     let container=[]
 gmResults.forEach((ride)=>{
     
-    if(ride === 'Thunder Mounatin'){
+    if(ride === 'Thunder Mountain'){
         container.push(ride)
     }
     
@@ -227,7 +218,7 @@ gmResults.forEach((ride)=>{
 }
 
 
-
+console.log(gmResults)
 console.log(splashWin())
 console.log(matterhornWin())
 console.log(piratesWin())
