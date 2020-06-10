@@ -158,12 +158,81 @@ gmResults.forEach((ride)=>{
     }
 }
 
+function spaceWin(){
+    let container=[]
+gmResults.forEach((ride)=>{
+    
+    if(ride === 'Space Mounatin'){
+        container.push(ride)
+    }
+    
+})
+    if(container.length === 3){
+        return 'Youve won with 3 Space mountains!'
+    }
+    else{
+        return 'you got no Space'
+    }
+}
+
+function thunderhWin(){
+    let container=[]
+gmResults.forEach((ride)=>{
+    
+    if(ride === 'Thunder Mounatin'){
+        container.push(ride)
+    }
+    
+})
+    if(container.length === 3){
+        return 'Youve won with 3 Thunder mountains!'
+    }
+    else{
+        return 'you got no Thunder'
+    }
+}
+
+function piratesWin(){
+    let container=[]
+gmResults.forEach((ride)=>{
+    
+    if(ride === 'Pirates of the Carribean'){
+        container.push(ride)
+    }
+    
+})
+    if(container.length === 3){
+        return 'Youve won with 3 Pirates!'
+    }
+    else{
+        return 'you got no Pirates'
+    }
+}
+
+function matterhornWin(){
+    let container=[]
+gmResults.forEach((ride)=>{
+    
+    if(ride === 'Matterhorn'){
+        container.push(ride)
+    }
+    
+})
+    if(container.length === 3){
+        return 'Youve won with 3 Matterhorns!'
+    }
+    else{
+        return 'you got no Matterhorn'
+    }
+}
+
+
+
 console.log(splashWin())
-
-
-
-
-
+console.log(matterhornWin())
+console.log(piratesWin())
+console.log(spaceWin())
+console.log(thunderhWin())
 
 
 
