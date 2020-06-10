@@ -187,7 +187,7 @@ function piratesWin(){
     let container=[]
 gmResults.forEach((ride)=>{
     
-    if(ride === 'Pirates of the Carribean'){
+    if(ride === 'Pirates of the Carribbean'){
         container.push(ride)
     }
     
@@ -225,7 +225,7 @@ console.log(piratesWin())
 console.log(spaceWin())
 console.log(thunderhWin())
 
-         
+          
 
 
 
