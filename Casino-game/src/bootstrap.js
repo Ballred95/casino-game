@@ -27,7 +27,7 @@ let slotResults =function (){
     let slotAssignment = new SlotMachine(_.random(0,4), _.random(0,4), _.random(0,4), _.random(0,4), _.random(0,4))
     switch(slotAssignment.slot1){
         case 0:
-            resultArr.push('Splash Mounatin')
+            resultArr.push('Splash Mountain')
             break; 
         case 1:
             resultArr.push('Space Mountain')
@@ -47,7 +47,7 @@ let slotResults =function (){
     }
     switch(slotAssignment.slot2){
         case 0:
-            resultArr.push('Splash Mounatin')
+            resultArr.push('Splash Mountain')
             break; 
         case 1:
             resultArr.push('Space Mountain')
@@ -67,7 +67,7 @@ let slotResults =function (){
     }
     switch(slotAssignment.slot3){
         case 0:
-            resultArr.push('Splash Mounatin')
+            resultArr.push('Splash Mountain')
             break; 
         case 1:
             resultArr.push('Space Mountain')
@@ -87,7 +87,7 @@ let slotResults =function (){
     }
     switch(slotAssignment.slot4){
         case 0:
-            resultArr.push('Splash Mounatin')
+            resultArr.push('Splash Mountain')
             break; 
         case 1:
             resultArr.push('Space Mountain')
@@ -141,7 +141,7 @@ gmResults.forEach((ride)=>{
     }
     
 })
-    if(container.length === 3){
+    if(container.length >= 3){
         return 'Youve won with 3 splash mountains!'
     }
     else{
@@ -158,7 +158,7 @@ gmResults.forEach((ride)=>{
     }
     
 })
-    if(container.length === 3){
+    if(container.length >= 3){
         return 'Youve won with 3 Space mountains!'
     }
     else{
@@ -175,7 +175,7 @@ gmResults.forEach((ride)=>{
     }
     
 })
-    if(container.length === 3){
+    if(container.length >= 3){
         return 'Youve won with 3 Thunder mountains!'
     }
     else{
@@ -192,7 +192,7 @@ gmResults.forEach((ride)=>{
     }
     
 })
-    if(container.length === 3){
+    if(container.length >= 3){
         return 'Youve won with 3 Pirates!'
     }
     else{
@@ -209,14 +209,14 @@ gmResults.forEach((ride)=>{
     }
     
 })
-    if(container.length === 3){
+    if(container.length >= 3){
         return 'Youve won with 3 Matterhorns!'
     }
     else{
         return 'you got no Matterhorn'
     }
 }
-
+    
 
 console.log(gmResults)
 console.log(splashWin())
@@ -225,7 +225,7 @@ console.log(piratesWin())
 console.log(spaceWin())
 console.log(thunderhWin())
 
-
+         
 
 
 
