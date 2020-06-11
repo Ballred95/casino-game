@@ -159,7 +159,7 @@ gmResults.forEach((ride)=>{
     
 })
     if(container.length >= 3){
-        return True
+        return true
     }
     else{
         return false
