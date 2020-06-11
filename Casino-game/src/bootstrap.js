@@ -142,10 +142,10 @@ gmResults.forEach((ride)=>{
     
 })
     if(container.length >= 3){
-        return 'Youve won with 3 splash mountains!'
+        return true
     }
     else{
-        return 'you got no splash'
+        return false
     }
 }
 
@@ -159,10 +159,10 @@ gmResults.forEach((ride)=>{
     
 })
     if(container.length >= 3){
-        return 'Youve won with 3 Space mountains!'
+        return True
     }
     else{
-        return 'you got no Space'
+        return false
     }
 }
 
@@ -226,7 +226,34 @@ console.log(spaceWin())
 console.log(thunderhWin())
 
         
-            
+
+let wallet =100
+
+const calc = (win=true)=>{
+    wallet
+    if(win === true){
+        wallet+=50
+    }
+    else{
+        wallet-=50
+    }
+    
+    return wallet
+}
+
+console.log(calc())
+console.log(calc())
+console.log(calc(false))
+
+function gameBox(){
+
+}
+
+
+
+
+
+
 
 
 
