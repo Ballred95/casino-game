@@ -216,7 +216,31 @@ gmResults.forEach((ride)=>{
         return false
     }
 }
+
+let wallet =100
+
+const calc = (ride=true)=>{
+    wallet
+    if(ride === true){
+        wallet+=50
+    }
+    else{
+        return wallet-=50
+    }
     
+    return wallet
+}
+
+
+// const arr =[piratesWin, spaceWin, splashWin, matterhornWin, thunderhWin]
+// if(arr.includes(true)){
+//     wallet+=50
+// }
+// else{
+//     wallet-=50
+// }
+// console.log(wallet) 
+
 
 console.log(gmResults)
 console.log(splashWin())
@@ -225,27 +249,41 @@ console.log(piratesWin())
 console.log(spaceWin())
 console.log(thunderhWin())
 
+
+
+function myFunc(){
+wallet
+const array = [splashWin(), matterhornWin(), piratesWin(), spaceWin(), thunderhWin()]
+
+if(array.includes(true)){
+    wallet+=50
+
+}
+else{
+    wallet-=50
+}
+return wallet
+}
+
+myFunc()
+
+
+
+
+
+   
+
+
+
+
+
         
 
-let wallet =100
 
-const calc = (win=true)=>{
-    wallet
-    if(win === true){
-        wallet+=50
-    }
-    else{
-        wallet-=50
-    }
-    
-    return wallet
-}
 
-console.log(calc())
 
-function gameBox(){
 
-}
+
 
 
 
