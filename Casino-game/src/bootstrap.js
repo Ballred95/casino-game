@@ -176,10 +176,10 @@ gmResults.forEach((ride)=>{
     
 })
     if(container.length >= 3){
-        return 'Youve won with 3 Thunder mountains!'
+        return true
     }
     else{
-        return 'you got no Thunder'
+        return false
     }
 }
 
@@ -193,10 +193,10 @@ gmResults.forEach((ride)=>{
     
 })
     if(container.length >= 3){
-        return 'Youve won with 3 Pirates!'
+        return true
     }
     else{
-        return 'you got no Pirates'
+        return false
     }
 }
 
@@ -210,10 +210,10 @@ gmResults.forEach((ride)=>{
     
 })
     if(container.length >= 3){
-        return 'Youve won with 3 Matterhorns!'
+        return true
     }
     else{
-        return 'you got no Matterhorn'
+        return false
     }
 }
     
@@ -242,8 +242,6 @@ const calc = (win=true)=>{
 }
 
 console.log(calc())
-console.log(calc())
-console.log(calc(false))
 
 function gameBox(){
 
