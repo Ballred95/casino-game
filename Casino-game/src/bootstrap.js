@@ -14,12 +14,7 @@ class SlotMachine{
 }
 
 
-// function randomNumberGenerator(){
-//     let container = []
-//     let numArray =_.times(5, ()=>container.push(_.random(0,5)))
-//     return container
-    
-// }
+
 
 
 let slotResults =function (){
@@ -129,7 +124,7 @@ let slotResults =function (){
     return resultArr
 }
 
-let gmResults = slotResults()
+
 
 
 function splashWin(){
@@ -232,40 +227,47 @@ const calc = (ride=true)=>{
 }
 
 
-// const arr =[piratesWin, spaceWin, splashWin, matterhornWin, thunderhWin]
-// if(arr.includes(true)){
-//     wallet+=50
-// }
-// else{
-//     wallet-=50
-// }
-// console.log(wallet) 
 
 
-console.log(gmResults)
-console.log(splashWin())
-console.log(matterhornWin())
-console.log(piratesWin())
-console.log(spaceWin())
-console.log(thunderhWin())
+
+// console.log(gmResults)
+// console.log(splashWin())
+// console.log(matterhornWin())
+// console.log(piratesWin())
+// console.log(spaceWin())
+// console.log(thunderhWin())
 
 
 
 function myFunc(){
-wallet
 const array = [splashWin(), matterhornWin(), piratesWin(), spaceWin(), thunderhWin()]
 
 if(array.includes(true)){
-    wallet+=50
+    return 50
 
 }
 else{
-    wallet-=50
-}
-return wallet
+    return -50
 }
 
-myFunc()
+}
+let gmResults
+let playAgain
+
+console.log('Welcome to the Disneyland Slot Machine. Match any ride 3 times to win!')
+do{
+    
+     console.log(gmResults = slotResults())
+    wallet+=myFunc()
+    console.log(wallet)
+     playAgain = prompt('want to play again?')
+} while(playAgain === 'yes')
+
+
+
+
+
+
 
 
 
